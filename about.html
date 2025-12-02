@@ -215,7 +215,7 @@
       </div>
       <div class="relative h-[420px]" data-aos="fade-left">
         <div class="absolute inset-0 rounded-3xl overflow-hidden shadow-2xl">
-          <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=900&q=80" alt="Équipe RCOM" class="w-full h-full object-cover" />
+          <img src="images/f.jpg" alt="Équipe RCOM" class="w-full h-full object-cover" />
         </div>
         <div class="absolute -bottom-6 -right-6 bg-white rounded-2xl shadow-xl p-6 w-64">
           <p class="text-sm text-gray-500">Valeurs et Engagements</p>
@@ -242,7 +242,7 @@
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         <div class="rounded-3xl border border-gray-100 shadow-xl overflow-hidden bg-white" data-aos="fade-up" data-aos-delay="0">
           <div class="h-64 overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&w=600&q=80" alt="Sophie Kouadio" class="w-full h-full object-cover">
+            <img src="images/avatar.jpg" alt="Sophie Kouadio" class="w-full h-full object-cover">
           </div>
           <div class="p-6">
             <p class="text-sm uppercase tracking-wide text-primary font-semibold">Directrice Conseil</p>
@@ -257,11 +257,11 @@
 
         <div class="rounded-3xl border border-gray-100 shadow-xl overflow-hidden bg-white" data-aos="fade-up" data-aos-delay="100">
           <div class="h-64 overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=600&q=80" alt="Jules N'Guessan" class="w-full h-full object-cover">
+            <img src="images/avatar.jpg" alt="Jules N'Guessan" class="w-full h-full object-cover">
           </div>
           <div class="p-6">
             <p class="text-sm uppercase tracking-wide text-primary font-semibold">Lead Création & Contenus</p>
-            <h3 class="text-2xl font-bold text-gray-900 mt-2">Jules N'Guessan</h3>
+            <h3 class="text-2xl font-bold text-gray-900 mt-2">Augustin N'Guessan</h3>
             <p class="text-gray-600 text-sm mt-3">Direction artistique, production audiovisuelle, storytelling digital.</p>
             <div class="mt-5 flex flex-wrap gap-2 text-xs font-semibold text-primary">
               <span class="px-3 py-1 bg-primary/10 rounded-full">Design</span>
@@ -272,7 +272,7 @@
 
         <div class="rounded-3xl border border-gray-100 shadow-xl overflow-hidden bg-white" data-aos="fade-up" data-aos-delay="200">
           <div class="h-64 overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&q=80" alt="Mariam Traoré" class="w-full h-full object-cover">
+            <img src="images/avatar.jpg" alt="Mariam Traoré" class="w-full h-full object-cover">
           </div>
           <div class="p-6">
             <p class="text-sm uppercase tracking-wide text-primary font-semibold">Consultante Senior</p>
@@ -376,35 +376,21 @@
 
       <!-- Contact Form -->
       <div data-aos="fade-left">
-        <form class="bg-neutralLight rounded-3xl p-8 shadow-2xl border border-neutralLight">
+        <form id="whatsappForm" class="bg-neutralLight rounded-3xl p-8 shadow-2xl border border-neutralLight">
           <div class="space-y-6">
             <div>
               <label class="block text-sm font-semibold text-neutralDark mb-2 flex items-center gap-2">
                 <span>Nom complet</span>
-                <span class="text-primary">*</span>
+                <span class="text-red-500">*</span>
               </label>
-              <input type="text" required class="w-full px-4 py-3 rounded-xl border border-neutralLight focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition placeholder-neutralDark/50" />
+              <input type="text" id="name" required class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-green-500 focus:ring-2 focus:ring-green-500/20 outline-none transition" placeholder="Votre nom" />
             </div>
-
-            <div>
-              <label class="block text-sm font-semibold text-neutralDark mb-2 flex items-center gap-2">
-                <span>Email</span>
-                <span class="text-primary">*</span>
-              </label>
-              <input type="email" required class="w-full px-4 py-3 rounded-xl border border-neutralLight focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition placeholder-neutralDark/50" />
-            </div>
-
-            <div>
-              <label class="block text-sm font-semibold text-neutralDark mb-2">Téléphone</label>
-              <input type="tel" class="w-full px-4 py-3 rounded-xl border border-neutralLight focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition placeholder-neutralDark/50" />
-            </div>
-
             <div>
               <label class="block text-sm font-semibold text-neutralDark mb-2 flex items-center gap-2">
                 <span>Service souhaité</span>
-                <span class="text-primary">*</span>
+                <span class="text-red-500">*</span>
               </label>
-              <select required class="w-full px-4 py-3 rounded-xl border border-neutralLight focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition text-neutralDark">
+              <select id="service" required class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-green-500 focus:ring-2 focus:ring-green-500/20 outline-none transition text-neutralDark">
                 <option value="" disabled selected>Sélectionnez un service</option>
                 <option>Stratégie & Conseil</option>
                 <option>Design produit</option>
@@ -416,21 +402,24 @@
             <div>
               <label class="block text-sm font-semibold text-neutralDark mb-2 flex items-center gap-2">
                 <span>Message</span>
-                <span class="text-primary">*</span>
+                <span class="text-red-500">*</span>
               </label>
-              <textarea rows="4" placeholder="Parlez-nous de votre projet..." required class="w-full px-4 py-3 rounded-xl border border-neutralLight focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition resize-none placeholder-neutralDark/50"></textarea>
+              <textarea id="message" rows="4" placeholder="Parlez-nous de votre projet..." required class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-green-500 focus:ring-2 focus:ring-green-500/20 outline-none transition resize-none"></textarea>
             </div>
 
-            <button type="submit" class="w-full px-8 py-4 rounded-xl bg-primary text-white font-semibold shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all flex items-center justify-center gap-2 group">
-              <span>Envoyer le message</span>
+            <button type="submit" class="w-full px-8 py-4 rounded-xl bg-green-500 text-white font-semibold shadow-xl hover:shadow-2xl hover:bg-green-600 transform hover:scale-105 transition-all flex items-center justify-center gap-2 group">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+              </svg>
+              <span>Contacter sur WhatsApp</span>
               <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
               </svg>
             </button>
 
-            <p class="text-xs text-neutralDark text-center">Nous respectons votre vie privée. Aucun spam.</p>
-          </div>
-        </form>
+            <p class="text-xs text-neutralDark text-center">Vous serez redirigé vers WhatsApp pour continuer la conversation</p>
+            </div>
+      </form>
       </div>
     </div>
   </div>
@@ -596,6 +585,25 @@
         observer.observe(counter);
       });
     }
+  </script>
+  <script>
+    document.getElementById('whatsappForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      const name = document.getElementById('name').value;
+      const service = document.getElementById('service').value;
+      const message = document.getElementById('message').value;
+      
+      // Numéros WhatsApp de l'entreprise
+      const businessPhone = '22797404778'; // Remplacez par votre numéro WhatsApp
+      
+      // Créer le message
+      const whatsappMessage = `Bonjour, je m'appelle ${name}.%0A%0AService souhaité: ${service}%0A%0AMessage: ${message}`;
+      
+      // Ouvrir WhatsApp
+      const whatsappUrl = `https://wa.me/${businessPhone}?text=${whatsappMessage}`;
+      window.open(whatsappUrl, '_blank');
+    });
   </script>
 </body>
 </html>
